@@ -17,10 +17,10 @@ namespace LSD_Backend.Tests
             Assert.IsTrue(true);
         }
 
-        //[TestMethod()]
-        //public void TestFail()
-        //{
-        //    Assert.IsTrue(false);
-        //}
+        [TestMethod()]
+        public void TestTrueAgain()
+        {
+            Assert.IsTrue(true);
+        }
     }
 }
