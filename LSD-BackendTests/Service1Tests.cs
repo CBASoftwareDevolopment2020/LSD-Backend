@@ -12,9 +12,15 @@ namespace LSD_Backend.Tests
     public class Service1Tests
     {
         [TestMethod()]
-        public void GetDataUsingDataContractTest()
+        public void TestTrue()
         {
             Assert.IsTrue(true);
+        }
+
+        [TestMethod()]
+        public void TestFail()
+        {
+            Assert.IsTrue(false);
         }
     }
 }
