@@ -18,6 +18,13 @@ steps:
   - task: NuGetToolInstaller@1
 
   - task: NuGetCommand@2
+    displayName: "NuGet restore"
+    inputs:
+      restoreSolution: '**\*.sln'
+      feedsToUse: config
+      nugetConfigPath: "nuget.config"
+
+  - task: NuGetCommand@2
     inputs:
       restoreSolution: "$(solution)"
 
