@@ -17,15 +17,12 @@ variables:
 steps:
   - task: NuGetToolInstaller@1
 
-  - task: DownloadPipelineArtifact@2
+  - task: NuGetCommand@2
+    displayName: "NuGet restore"
     inputs:
-      artifact: LSD-Contract
-  # - task: NuGetCommand@2
-  #   displayName: "NuGet restore"
-  #   inputs:
-  #     restoreSolution: "$(solution)"
-  #     feedsToUse: config
-  #     nugetConfigPath: "nuget.config"
+      restoreSolution: "$(solution)"
+      feedsToUse: config
+      nugetConfigPath: "nuget.config"
 
   - task: NuGetCommand@2
     inputs:
