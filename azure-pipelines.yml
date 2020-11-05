@@ -19,7 +19,7 @@ steps:
 
   - task: DownloadPipelineArtifact@2
     inputs:
-      artifact: LSD_Contract
+      artifact: LSD-Contract
   # - task: NuGetCommand@2
   #   displayName: "NuGet restore"
   #   inputs:
